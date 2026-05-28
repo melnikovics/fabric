@@ -1,5 +1,15 @@
 # Changelog
 
+## v1.4.453 (2026-05-28)
+
+### PR [#2132](https://github.com/danielmiessler/Fabric/pull/2132) by [ksylvan](https://github.com/ksylvan): Add Claude Opus 4.8 model and bump Go toolchain and dependencies
+
+- Add Claude Opus 4.8 to the list of supported models.
+- Upgrade the Go toolchain to version 1.26.0.
+- Bump `anthropic-sdk-go` to v1.46.0.
+- Update AWS SDK and Bedrock service modules to their latest versions.
+- Bump the Ollama client to v0.24.0.
+
 ## v1.4.452 (2026-05-04)
 
 ### PR [#2111](https://github.com/danielmiessler/Fabric/pull/2111) by [ksylvan](https://github.com/ksylvan): fix: omit Anthropic sampling params for Claude Opus 4.7
