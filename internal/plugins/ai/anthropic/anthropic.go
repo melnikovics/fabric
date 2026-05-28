@@ -44,6 +44,7 @@ func NewClient() (ret *Client) {
 	ret.defaultRequiredUserMessage = "Hi"
 	ret.models = []string{
 		// The following are the current supported models
+		string(anthropic.ModelClaudeOpus4_8),
 		string(anthropic.ModelClaudeOpus4_7),
 		string(anthropic.ModelClaudeSonnet4_6),
 		string(anthropic.ModelClaudeOpus4_6),
