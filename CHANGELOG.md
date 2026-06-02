@@ -1,5 +1,13 @@
 # Changelog
 
+## v1.4.454 (2026-06-02)
+
+### PR [#2136](https://github.com/danielmiessler/Fabric/pull/2136) by [ksylvan](https://github.com/ksylvan): chore: extend sampling param exclusion to Opus 4.8 models
+
+- Extends the sampling parameter exclusion logic to cover Opus 4.8 models, ensuring consistent behavior alongside the existing Opus 4.7 exclusion.
+- Adds the `claude-opus-4-8` model prefix to the sampling parameter exclusion check.
+- Updates the associated code comment to explicitly reference Opus 4.8 models.
+
 ## v1.4.453 (2026-05-28)
 
 ### PR [#2132](https://github.com/danielmiessler/Fabric/pull/2132) by [ksylvan](https://github.com/ksylvan): Add Claude Opus 4.8 model and bump Go toolchain and dependencies
