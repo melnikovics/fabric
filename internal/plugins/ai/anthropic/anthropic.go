@@ -25,9 +25,9 @@ const webSearchToolType = "web_search_20250305"
 const sourcesHeader = "## Sources"
 
 func modelDisallowsSamplingParams(model string) bool {
-	// Anthropic's Opus 4.7 models reject non-default sampling parameters.
+	// Anthropic's Opus 4.7 and Opus 4.8 models reject non-default sampling parameters.
 	// Omit these params entirely for safest compatibility.
-	return strings.HasPrefix(model, "claude-opus-4-7")
+	return strings.HasPrefix(model, "claude-opus-4-7") || strings.HasPrefix(model, "claude-opus-4-8")
 }
 
 func NewClient() (ret *Client) {
